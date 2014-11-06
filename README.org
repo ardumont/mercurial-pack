@@ -1,0 +1,4 @@
+#+title: mercurial-pack
+#+author: ardumont
+
+Mercurial setup.
