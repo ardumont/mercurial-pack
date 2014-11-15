@@ -13,7 +13,7 @@
 
 (defvar mercurial-pack-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c g") 'monky-status)
+    (define-key map (kbd "C-c d g") 'monky-status)
     map)
   "Keymap for mercurial-pack mode.")
 
