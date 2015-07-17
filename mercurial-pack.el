@@ -21,7 +21,7 @@
   "Minor mode to consolidate mercurial-pack extensions.
 
 \\{mercurial-pack-mode-map}"
-  :lighter " MP"
+  :lighter " HgP"
   :keymap mercurial-pack-mode-map)
 
 (define-globalized-minor-mode global-mercurial-pack-mode mercurial-pack-mode mercurial-pack-on)
