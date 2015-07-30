@@ -4,12 +4,9 @@
 
 ;;; Code:
 
-
-(require 'install-packages-pack)
-(install-packages-pack/install-packs '(monky))
-
-(require 'monky)
-(setq monky-process-type 'cmdserver)
+(use-package monky
+  :config
+  (custom-set-variables '(monky-process-type 'cmdserver)))
 
 (defvar mercurial-pack-mode-map
   (let ((map (make-sparse-keymap)))
