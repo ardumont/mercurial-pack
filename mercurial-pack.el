@@ -7,11 +7,11 @@
 (require 'monky)
 (custom-set-variables '(monky-process-type 'cmdserver))
 
-(defvar mercurial-pack-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c d g") 'monky-status)
-    map)
-  "Keymap for mercurial-pack mode.")
+(defvar mercurial-pack-mode-map nil "Keymap for mercurial-pack mode.")
+(setq mercurial-pack-mode-map
+      (let ((map (make-sparse-keymap)))
+	(define-key map (kbd "C-c m g") 'monky-status)
+	map))
 
 (define-minor-mode mercurial-pack-mode
   "Minor mode to consolidate mercurial-pack extensions.
